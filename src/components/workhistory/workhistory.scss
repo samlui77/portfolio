@@ -1,0 +1,113 @@
+@import "./src/global.scss";
+
+.workhistory{
+    background-color: #001e36;
+    display:flex;
+    flex-direction:  column;
+    position: relative;
+      
+    h1{
+        overflow-x:visible !important;
+        margin-top: 15px;
+        text-align: center;
+        font-size: 40px;
+        //font-weight: 400;
+        color:#eb4781;
+        @include mobile{
+            font-size: 28px;
+        }
+        &::before {
+            content: "|";
+            color:#a10e06;
+            font-size: 50px;
+            font-weight: 500;
+           padding-right: 5px;
+           @include mobile{
+               font-size: 30px;
+           }
+        }
+    }
+
+    h3{
+        font-size: 18px;
+        font-weight:500;
+        color:#24adf3;
+    }
+
+    h5{
+        font-size: 15px;
+        color:$sectionFontColor;
+        text-decoration: underline;
+
+        a{
+            //color:$sectionFontColor;
+            color:#eb4781;
+            
+            &:hover{
+                color:#e9b61b;
+            }
+        }
+    }
+
+    #description{
+        //margin:0;
+        //padding: 0;
+       // list-style-type: circle;
+        list-style-position: outside;
+        font-size: 14px;
+        font-weight:500;
+
+        li{
+            overflow-x:visible !important;
+            margin-top: 3px;
+            display: list-item;
+            @include mobile{
+                font-size: 12px;
+            }
+        }
+    }
+
+    .content{
+        overflow-x:visible !important;
+    }
+    .vertical-timeline{
+        background-color: none;
+    }
+    .vertical-timeline-element-content {
+        opacity: 85%;
+        border-top: 3px solid #a10e06;
+        overflow-x:visible !important;
+        box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25),
+          0 0.4em 1.25em 0 rgba(0, 0, 0, 0.15) !important;
+       // padding: 2em 3em !important;
+      
+    }
+    .vertical-timeline-element-title
+    {
+        @include mobile{
+            font-size: 16px;
+        }
+    }
+    .vertical-timeline-element-subtitle{
+        @include mobile{
+            font-size: 13px;
+            font-weight: 600;
+        }
+    }
+    .vertical-timeline-element-icon {
+        margin: 2.5px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       img{
+           width: 25px;
+           height: 25px;
+       }
+    }
+    .date{
+        color:#ee8d0f
+    }
+   
+
+}

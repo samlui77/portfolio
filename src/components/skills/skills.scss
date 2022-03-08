@@ -1,0 +1,126 @@
+@import "./src/global.scss";
+
+.skills{
+    position: relative;
+    background-color: #e2e5e8;
+    background-image: linear-gradient(to top, white, #e2e5e8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x:visible !important;
+
+    h1{
+        overflow-x:visible !important;
+        padding-left: 5px;
+        font-size: 40px;
+        @include mobile{
+            font-size: 28px;
+        }
+        
+        &::before {
+                content: "|";
+                color:#a10e06;
+                font-size: 50px;
+                font-weight: 500;
+                padding-right: 5px;
+                @include mobile{
+                    font-size: 30px;
+                }
+            }
+    }
+
+    ul{
+        overflow-x:visible !important;
+        margin: 10px;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        @include mobile{
+            margin: 10px 0;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+    }
+
+    .container{
+        width: 70%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        
+        & *{
+            overflow-x:visible !important;
+        }
+        @include mobile{
+            width: 100%;
+        }
+        
+        .item{
+            //padding: 5px;
+            width: 200px;
+            height: 150px;
+            border-radius: 20px;
+           // border: 1px solid rgb(240,239,239);
+            margin: 10px 0 0 0;
+            display: flex;
+            flex-direction:  column;
+            align-items: center;
+            justify-content: center;
+            color:#343434;
+            //position: relative;
+            transition: all .5s ease;
+            cursor: pointer;
+
+            @include mobile{
+                width: 130px;
+                //height: 100px;
+            }
+            .pBar{
+                width: 100px;
+                height: 100px; 
+                @include mobile{
+                    width: 60px;
+                    height: 60px;
+                }
+            }
+            h3{
+               //position:relative;
+                //position:absolute;
+                font-size: 16px;
+                font-weight: 500;
+                //color:#343434;
+                @include mobile{
+                    font-size: 13px;
+                }
+            }
+
+            .exp{
+               padding-left: 10px;
+                font-size: 12px;
+                @include mobile{
+                    font-size: 10px;
+                }
+            }
+
+            img{
+                //width:200px;
+                height: 150px;
+                object-fit: cover;
+                z-index: 1;
+            }
+
+            &:hover{
+                background-color: $mainColor;
+                color:white;
+                img{
+                    opacity: 0.2;
+                    z-index: 0;
+                }
+
+            }
+
+        }
+    }
+}

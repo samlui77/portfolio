@@ -1,0 +1,89 @@
+$mainColor: #132d65; //#f09a19;       //#13257c;
+$mainFontColor:#515151;
+$sectionFontColor:#646464;
+$width:768px;
+
+@mixin mobile{
+    @media(max-width:#{$width}){
+        @content
+    }
+
+}
+
+.codeTag{
+    font-size: 80px;
+    font-weight: 400;
+    color:#a10e06;
+}
+.slash{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.sectionNo{
+    color:#515151;
+    font-size: 35px;
+    font-weight: 300;
+    padding-right: 10px;
+}
+
+.navigator{
+    overflow-x:visible !important;
+    background-color: none;
+    position:absolute;
+    top:auto;
+    bottom:0;
+    z-index: 2;
+    width: 100%;
+    display: flex;
+    align-items:center;
+    justify-content: flex-end;
+    padding: 2px;
+    //background-color: red;
+    
+
+    a{
+        padding-right:25px;
+        overflow-x:visible !important;
+        flex-shrink: 0;
+        //bottom:10px;
+
+        .navCircle{
+            flex-shrink: 0;
+            overflow-x:visible !important;
+            background-color: #646464;
+            border-radius: 50%;
+            width: 55px;
+            height: 55px;
+            display: flex;
+            align-items:center;
+            justify-content: center;
+            opacity: 80%;
+            
+            &:hover{
+                background-color: #f1be13;
+            }
+
+            @include mobile {
+                width: 35px;
+                height: 35px;
+            }
+            
+            svg{
+                padding-top: 5px;
+                width: 50px;
+                fill: white;
+            /* animation: arrowBlink 2s infinite;*/
+                @include mobile {
+                    width: 30px;
+                }
+                &:hover{
+                     fill: white;
+                }
+            }
+        }
+    }
+    
+
+}
+
