@@ -1,6 +1,7 @@
 @import "./src/global.scss";
 
 .skills{
+    margin-top: 70px;
     position: relative;
     background-color: #e2e5e8;
     background-image: linear-gradient(to top, white, #e2e5e8);
@@ -14,7 +15,7 @@
         padding-left: 5px;
         font-size: 40px;
         @include mobile{
-            font-size: 28px;
+            font-size: 24px;
         }
         
         &::before {
@@ -36,20 +37,25 @@
         list-style: none;
         display: flex;
         @include mobile{
-            margin: 10px 0;
+            margin: 5px;
+            font-size: 12px;
             flex-wrap: wrap;
             justify-content: center;
         }
-        
+        li{
+            padding: 2px;
+            font-size: 12px;
+        }
     }
 
     .container{
-        width: 70%;
+        max-width:85%;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
-        
+        //background-color: #a10e06;
+        overflow-x:visible !important;
         & *{
             overflow-x:visible !important;
         }
@@ -58,7 +64,6 @@
         }
         
         .item{
-            //padding: 5px;
             width: 200px;
             height: 150px;
             border-radius: 20px;
@@ -74,8 +79,11 @@
             cursor: pointer;
 
             @include mobile{
-                width: 130px;
-                //height: 100px;
+                border-radius: 10px;
+                width: 80px;
+                height: 100px;
+                padding-left:5px;
+                
             }
             .pBar{
                 width: 100px;
@@ -92,7 +100,7 @@
                 font-weight: 500;
                 //color:#343434;
                 @include mobile{
-                    font-size: 13px;
+                    font-size: 10px;
                 }
             }
 
@@ -100,7 +108,7 @@
                padding-left: 10px;
                 font-size: 12px;
                 @include mobile{
-                    font-size: 10px;
+                   display: none;
                 }
             }
 

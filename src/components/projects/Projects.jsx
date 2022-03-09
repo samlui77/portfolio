@@ -97,14 +97,16 @@ export default function Projects() {
 
   return (
        <div className="projects" id="projects">
-        
+        {/* <div className="title">test</div> */}
         {/* <h1><span className="codeTag">&lt;</span>Projects. <span className="slash">/</span><span className="codeTag">&gt;</span></h1> */}
         <h1>Projects.</h1>
-        <div className="copyRight">*All projects Copyright &copy; by my clients and my previous companies. All Rights Reserved.</div>
+        {/* <div className="copyRight">*All projects Copyright &copy; by my clients and my previous companies. All Rights Reserved.</div> */}
+        
         <div className="slider"
             /// style={{ transform: `translateX(-${currentSlide * 100}vw)` }}
             style={{ transform: `translateX(-${currentSlide * 100}vw)` }}
         >
+         
           {data.map((d) => (
             <div className="container" key={d.id}>
             <div className="item" key={d.id}>

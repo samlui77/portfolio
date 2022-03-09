@@ -1,6 +1,7 @@
 @import "./src/global.scss";
 
 .workhistory{
+    margin-top: 70px;
     background-color: #001e36;
     display:flex;
     flex-direction:  column;
@@ -14,7 +15,7 @@
         //font-weight: 400;
         color:#eb4781;
         @include mobile{
-            font-size: 28px;
+            font-size: 25px;
         }
         &::before {
             content: "|";

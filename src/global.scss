@@ -32,14 +32,16 @@ $width:768px;
     background-color: none;
     position:absolute;
     top:auto;
-    bottom:0;
+    bottom:0px;
     z-index: 2;
     width: 100%;
     display: flex;
     align-items:center;
     justify-content: flex-end;
-    padding: 2px;
-    //background-color: red;
+    padding: 1px;
+    @include mobile{
+        bottom:35px;
+    }
     
 
     a{

@@ -1,7 +1,7 @@
 export const backendSkills = [
     {
         id:1,
-        title:"Stored procedure",
+        title:"Stored proc.",
         percentage: "95",
         exp:"15+ projects, 20+ years exp."
     },
@@ -19,7 +19,7 @@ export const backendSkills = [
     },
     {
         id:4,
-        title:"Spring Framework",
+        title:"Spring",
         percentage: "65",
         exp:"2+ projects, 3+ years exp."
     },

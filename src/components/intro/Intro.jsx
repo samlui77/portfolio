@@ -25,7 +25,6 @@ export default function Intro(){
                 </div>
             </div>
             <div className="right">
-                {/* <div className="ukBg"><img src="img/uk.png" /></div>  */}
                 <div className="wrapper">
                     <h2>Hi! My name is</h2>
                     <h1>Sam Lui</h1>
